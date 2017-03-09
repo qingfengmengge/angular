@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+	</title>
+	<script type="text/javascript" src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="zmapp" ng-controller="zmc">
+	first name:<input type="" ng-model="firstname">
+	last name:<input type="" ng-model="lastname">
+	name:{{firstname+" "+lastname}}
+</div>
+<script type="text/javascript">
+	var zmapp = angular.module('zmapp',[]);
+	zmapp.controller('zmc',function($scope){
+		$scope.firstname = 'jogh';
+		$scope.lastname = 'zhang';
+	});
+</script>
+</body>
+</html>
