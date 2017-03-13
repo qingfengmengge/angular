@@ -1,0 +1,23 @@
+<!--2017.3.13-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="myc">
+		<h1>{{lastname}} 家族成员</h1>
+		<ul>
+			<li ng-repeat="x in names">{{x}} {{lastname}}</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		angular.module('myapp',[]).controller('myc',function($scope,$rootScope){
+			$scope.names = ["jim","tom","john"];
+			$rootScope.lastname = 'green';
+		})
+	</script>
+</body>
+</html>
