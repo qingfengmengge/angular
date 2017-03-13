@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body >
+	<!--ng-model 指令可以为应用数据提供状态值(invalid, dirty, touched, error)-->
+	<form ng-app="" name="myform" ng-init="myemails='aa@aa.com'">
+		<input type="email" name="myemail" ng-model="myemails" required>
+		<p></p>
+		<h1>状态</h1>
+		{{myform.myemail.$valid}}(如果输入的值是合法的则为 true)
+		{{myform.myemail.$dirty}}(如果值改变则为 true)
+		{{myform.myemail.$touched}}(如果通过触屏点击则为 true)
+	</form>
+</body>
+</html>

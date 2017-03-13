@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+	<!--验证用户输入-->
+	<form ng-app="" name="myform">
+	email:
+		<input type="email" name="myemail" ng-model="emails">
+		<span ng-show="myform.myemail.$error.email">邮箱不合法</span>
+	<br>
+	</form>
+</body>
+</html>

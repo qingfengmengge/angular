@@ -1,0 +1,25 @@
+<!--2017.3.13-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="zmapp">
+	<!-- AngularJS 完美支持数据库的 CRUD（增加Create、读取Read、更新Update、删除Delete）应用程序。
+把实例中的对象想象成数据库中的记录 -->
+	<!-- 创建自定义指令 -->
+	<!-- <yangmi></yangmi> -->
+	<div yangmi></div>
+	<script type="text/javascript">
+		var zmapp = angular.module('zmapp',[]);
+		zmapp.directive("yangmi",function(){
+			return {
+				restrict : 'A',
+				template : "<h1>自定义指令</h1>"
+			}
+		})
+	</script>
+</body>
+</html>
